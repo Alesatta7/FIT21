@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListaEsercizi">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Esercizi"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="30dp"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <!--_________INIZIO DEGLI ESERCIZI__________-->
+
+            <!--_________ADDOMINALI__________-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Addominali"
+                android:textAllCaps="false"
+                android:id="@+id/addominali_Button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crunch"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/crunch_Button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sollevamento gambe"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/sollevamento_gambe_Button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Russian Twist"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/russian_twist_Button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Superman"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/superman_Button" />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <!--_________DORSO__________-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dorso"
+                android:textAllCaps="false"
+                android:id="@+id/dorso_Button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stacchi"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/stacchi_Button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rematore in piedi"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/rematore_Button" />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <!--_________BICIPITI__________-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bicipiti"
+                android:textAllCaps="false"
+                android:id="@+id/bicipiti_Button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Curl"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/curl_Button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Curl su un solo braccio"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/curl_braccio_Button" />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <!--_________POLPACCI__________-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Polpacci"
+                android:textAllCaps="false"
+                android:id="@+id/polpacci_Button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salti su talloni"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/salti_talloni_Button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sollevamento su alluce"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/sollevamento_alluce_Button" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <!--_________PETTO__________-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Petto"
+                android:textAllCaps="false"
+                android:id="@+id/petto_Button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Push-ups"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/pushups_Button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Piegamenti su un solo braccio"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/piegamenti_braccio_Button" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <!--_________AVAMBRACCI__________-->
+            <Button
+                android:id="@+id/avambracci_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Avambracci" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rotazione polsi"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/rotazione_polsi_Button" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <!--_________GAMBE__________-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gambe"
+                android:textAllCaps="false"
+                android:id="@+id/gambe_Button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Squat"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/squat_Button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Affondi"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/affondi_Button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calci all'indietro"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/calci_Button" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <!--_________SPALLE__________-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spalle"
+                android:textAllCaps="false"
+                android:id="@+id/spalle_Button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alzate centrali"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/alzateFrontali_Button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alzate Laterali"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/alzateLaterali_Button" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <!--_________TRICIPITI__________-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tricipiti"
+                android:textAllCaps="false"
+                android:id="@+id/tricipi_Button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Piegamenti"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/piegamenti_Button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Piegamenti sul fianco"
+                android:backgroundTint="@color/black"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/piegamenti_fianco_Button" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

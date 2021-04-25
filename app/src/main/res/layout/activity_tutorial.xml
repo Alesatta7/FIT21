@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tutorial"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+
+    <TextView
+        android:id="@+id/pulsante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esegui questo esercizio"
+        android:visibility="gone"
+        android:textSize="36dp" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/androidGif"
+        android:src="@drawable/giphy"
+        android:visibility="gone" />
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/crunch_im"
+        android:src="@drawable/crunch_im"
+        android:visibility="gone" />
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timer_sb"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0:30"
+
+        android:id="@+id/timer_tv"
+        android:textSize="60sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INIZIO"
+        android:id="@+id/start_btn"
+        android:onClick="start_timer" />
+
+</LinearLayout >
