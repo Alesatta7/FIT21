@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity android:name=".SceltaAllenamento"></activity>
-        <activity android:name=".Home" />
+        <activity android:name=".FirtsActivity" />
         <activity android:name=".Tutorial" />
         <activity android:name=".ListaEsercizi" />
         <activity android:name=".MainActivity" />
         <activity android:name=".StartLogin" />
         <activity android:name=".ResultActivity" />
-        <activity android:name=".FirtsActivity">
+        <activity android:name=".Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

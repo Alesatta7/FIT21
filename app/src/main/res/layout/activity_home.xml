@@ -6,15 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Home">
 
-    <ImageButton
-        android:id="@+id/logoutButton"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:src="@android:drawable/ic_lock_idle_alarm"
-        android:backgroundTint="@color/white"/>
-
 
     <ImageButton
         android:id="@+id/profiloButton"
@@ -22,7 +13,7 @@
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:src="@android:drawable/ic_lock_idle_alarm"
+        android:src="@drawable/home"
         android:backgroundTint="@color/white"/>
 
     <ImageButton
@@ -31,7 +22,7 @@
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="110dp"
-        android:src="@android:drawable/ic_lock_idle_alarm"
+        android:src="@drawable/lista"
         android:backgroundTint="@color/white"/>
 
     <ImageButton
@@ -40,7 +31,7 @@
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:src="@android:drawable/ic_lock_idle_alarm"
+        android:src="@drawable/workout"
         android:backgroundTint="@color/white"/>
 
     <ImageButton
@@ -50,8 +41,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginRight="110dp"
         android:layout_alignParentRight="true"
-        android:src="@android:drawable/ic_lock_idle_alarm"
+        android:src="@drawable/impostazioni"
         android:backgroundTint="@color/white"/>
-
 
 </RelativeLayout>

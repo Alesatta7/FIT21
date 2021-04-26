@@ -6,11 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class ListaEsercizi extends AppCompatActivity {
 
     //Dichiarazione pulsanti dei muscoli
     Button addominali, dorso, bicipiti, polpacci, petto, avambracci, gambe, spalle, tricipiti;
+
+    //Dichiarazione pulsanti barra di controllo
+    ImageButton logout, profilo, impostazioni, esercizi, allenamento;
 
     //Dichiarazione pulsanti degli esercizi
     Button crunch, sollevamentoGambe, russianTwist, superMan;
@@ -22,6 +26,9 @@ public class ListaEsercizi extends AppCompatActivity {
     Button squat, affondi, calci;
     Button alzateLaterali, alzateFrontali;
     Button piegamentiFianco, piegamenti;
+
+    //Altri pulsanti
+    Button boh;
 
     //Dichiarazione variabili d'appoggio per gli ascoltatori
     Integer[] i = new Integer[] {0,0,0,0,0,0,0,0,0};
@@ -36,6 +43,8 @@ public class ListaEsercizi extends AppCompatActivity {
         setContentView(R.layout.activity_lista_esercizi);
         Intent info = getIntent();
 
+        //Prova del pulsante BOH
+        boh = findViewById(R.id.boh);
         //-------------------Assegnamento tramite id per i muscoli
         addominali = findViewById(R.id.addominali_Button);
         dorso = findViewById(R.id.dorso_Button);
@@ -80,6 +89,14 @@ public class ListaEsercizi extends AppCompatActivity {
 
 
 
+        //Pulsante BOH
+        boh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ritornoHome = new Intent(ListaEsercizi.this, Home.class);
+                startActivity(ritornoHome);
+            }
+        });
 
         //---------------------Listener per i muscoli
 
@@ -259,6 +276,31 @@ public class ListaEsercizi extends AppCompatActivity {
             }
         });
 
+        //Implementazione della barra di controllo
+        esercizi = findViewById(R.id.eserciziButton);
+        profilo = findViewById(R.id.profiloButton);
+        impostazioni = findViewById(R.id.impostazioniButton);
+        allenamento = findViewById(R.id.allenamentoButton);
+
+
+        esercizi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListaEsercizi.this,ListaEsercizi.class);
+                startActivity(intent);
+            }
+        });
+
+        allenamento.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListaEsercizi.this,SceltaAllenamento.class);
+                startActivity(intent);
+            }
+        });
+
+
+        //---------------------Esercizi con gif
         crunch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
