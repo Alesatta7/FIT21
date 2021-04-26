@@ -4,17 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
+    tools:context=".SceltaAllenamento">
 
-    <ImageButton
-        android:id="@+id/logoutButton"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:src="@android:drawable/ic_lock_idle_alarm"
-        android:backgroundTint="@color/white"/>
+    <TextView
+        android:id="@+id/facile"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/black"
+        android:text="facile"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="@color/white"/>
 
+    <TextView
+        android:id="@+id/medio"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/black"
+        android:text="medio"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/difficile"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/black"
+        android:text="difficile"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="@color/white"/>
 
     <ImageButton
         android:id="@+id/profiloButton"
@@ -52,6 +81,5 @@
         android:layout_alignParentRight="true"
         android:src="@android:drawable/ic_lock_idle_alarm"
         android:backgroundTint="@color/white"/>
-
 
 </RelativeLayout>

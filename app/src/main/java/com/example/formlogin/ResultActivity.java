@@ -61,7 +61,7 @@ public class ResultActivity extends AppCompatActivity {
 
         confirm.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent cambio = new Intent(ResultActivity.this, Home.class);
+                Intent cambio = new Intent(ResultActivity.this, StartLogin.class);
                 startActivity(cambio);
             }
         });

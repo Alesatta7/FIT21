@@ -50,26 +50,26 @@ public class StartLogin extends AppCompatActivity {
             public void onClick(View v) {
                 int err = 0;
                 if(mail.getText().toString().length() ==0){
-                    mail.setError("Inserire il nome");
+                    mail.setError("Inserire email");
                     err=1;
                 } else mail.setError(null);
 
                 if(!mail.getText().toString().equals(persona.getEmail())){
-                    mail.setError("Inserire il nome");
+                    mail.setError("mail sbagliata");
                     err=1;
                 } else mail.setError(null);
 
                 if(pass.getText().toString().length() ==0 ){
-                    pass.setError("Inserire il nome");
+                    pass.setError("Inserire password");
                     err=1;
                 } else pass.setError(null);
 
                 if(!pass.getText().toString().equals(persona.getPassword())){
-                    pass.setError("Inserire il nome");
+                    pass.setError("Password sbagliata");
                     err=1;
                 } else pass.setError(null);
                 if(err==0){
-                    Intent es = new Intent(StartLogin.this, Home.class);
+                    Intent es = new Intent(StartLogin.this, ListaEsercizi.class);
                     startActivity(es);
                 }
 
