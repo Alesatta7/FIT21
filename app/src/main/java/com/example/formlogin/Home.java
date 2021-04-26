@@ -24,7 +24,7 @@ public class Home extends AppCompatActivity {
         impostazioni = findViewById(R.id.impostazioniButton);
         allenamento = findViewById(R.id.allenamentoButton);
 
-
+        //Barra di controllo
         esercizi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
