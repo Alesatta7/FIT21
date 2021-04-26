@@ -60,9 +60,9 @@ public class ResultActivity extends AppCompatActivity {
         genereText.setText(persona.getGenere());
 
         confirm.setOnClickListener(new View.OnClickListener() {
-            @Override
             public void onClick(View v) {
-                finish();
+                Intent cambio = new Intent(ResultActivity.this, Home.class);
+                startActivity(cambio);
             }
         });
     }

@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.io.Serializable;
 
@@ -19,6 +20,7 @@ public class StartLogin extends AppCompatActivity {
     CheckBox showP;
     Persona persona;
     Button login;
+    TextView linkReg;
 
     String email, password;
 
@@ -67,13 +69,21 @@ public class StartLogin extends AppCompatActivity {
                     err=1;
                 } else pass.setError(null);
                 if(err==0){
-                    Intent es = new Intent(StartLogin.this, ListaEsercizi.class);
+                    Intent es = new Intent(StartLogin.this, Home.class);
                     startActivity(es);
                 }
 
             }
 
         });
+
+        /*linkReg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent cambio = new Intent(StartLogin.this, MainActivity.class);
+                startActivity(cambio);
+            }
+        });*/
 
 
         showP.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
