@@ -14,7 +14,7 @@ public class ListaEsercizi extends AppCompatActivity {
     Button addominali, dorso, bicipiti, polpacci, petto, avambracci, gambe, spalle, tricipiti;
 
     //Dichiarazione pulsanti barra di controllo
-    ImageButton logout, profilo, impostazioni, esercizi, allenamento;
+    ImageButton logout, profilo, impostazioni, esercizi, allenamento, home;
 
     //Dichiarazione pulsanti degli esercizi
     Button crunch, sollevamentoGambe, russianTwist, superMan;
@@ -28,7 +28,6 @@ public class ListaEsercizi extends AppCompatActivity {
     Button piegamentiFianco, piegamenti;
 
     //Altri pulsanti
-    Button boh;
 
     //Dichiarazione variabili d'appoggio per gli ascoltatori
     Integer[] i = new Integer[] {0,0,0,0,0,0,0,0,0};
@@ -43,7 +42,10 @@ public class ListaEsercizi extends AppCompatActivity {
         setContentView(R.layout.activity_lista_esercizi);
         Intent info = getIntent();
 
-        //Prova del pulsante BOH
+        //button bottom
+        home= findViewById(R.id.HomeButton);
+
+
         //-------------------Assegnamento tramite id per i muscoli
         addominali = findViewById(R.id.addominali_Button);
         dorso = findViewById(R.id.dorso_Button);
@@ -89,7 +91,7 @@ public class ListaEsercizi extends AppCompatActivity {
 
 
         //Pulsante BOH
-        boh.setOnClickListener(new View.OnClickListener() {
+        home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent ritornoHome = new Intent(ListaEsercizi.this, Home.class);

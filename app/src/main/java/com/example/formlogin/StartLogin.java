@@ -33,6 +33,7 @@ public class StartLogin extends AppCompatActivity {
         pass = findViewById(R.id.idPass);
         showP = findViewById(R.id.checkbox);
         login = findViewById(R.id.idLog);
+        linkReg = findViewById(R.id.linkReg);
 
         Intent intent = getIntent();
         Serializable object = intent.getSerializableExtra(MainActivity.PERSONA_PATH);
@@ -43,6 +44,14 @@ public class StartLogin extends AppCompatActivity {
         else {
             this.persona = new Persona();
         }
+
+        linkReg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent cambio = new Intent(StartLogin.this, MainActivity.class);
+                startActivity(cambio);
+            }
+        });
 
 
         login.setOnClickListener(new View.OnClickListener() {

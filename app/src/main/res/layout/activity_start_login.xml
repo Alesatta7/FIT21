@@ -74,6 +74,28 @@
             android:id="@+id/idLog"
             android:textSize="20dp" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nuovo utente?"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text=" Registrati"
+                android:textColor="#0000FF"
+                android:id="@+id/linkReg"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
     </LinearLayout>
 
 
