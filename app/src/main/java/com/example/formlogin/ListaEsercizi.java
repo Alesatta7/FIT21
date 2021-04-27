@@ -283,7 +283,6 @@ public class ListaEsercizi extends AppCompatActivity {
         impostazioni = findViewById(R.id.impostazioniButton);
         allenamento = findViewById(R.id.allenamentoButton);
 
-
         esercizi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -291,7 +290,6 @@ public class ListaEsercizi extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
         allenamento.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

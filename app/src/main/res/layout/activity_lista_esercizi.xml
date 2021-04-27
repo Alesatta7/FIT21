@@ -1,29 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/cut_card_background"
     tools:context=".ListaEsercizi">
 
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/idEs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Esercizi"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
     <ScrollView
+
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:background="@color/white">
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Esercizi"
-                android:textColor="@color/black"
-                android:gravity="center"
-                android:textSize="30dp"/>
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical">
 
             <Space
                 android:layout_width="match_parent"
@@ -33,47 +45,51 @@
 
             <!--_________ADDOMINALI__________-->
             <Button
+                android:id="@+id/addominali_Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Addominali"
-                android:textAllCaps="false"
-                android:id="@+id/addominali_Button" />
+                android:textAllCaps="false" />
+
             <Button
+                android:id="@+id/crunch_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
                 android:text="Crunch"
-                android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
                 android:textAllCaps="false"
-                android:id="@+id/crunch_Button" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
             <Button
+                android:id="@+id/sollevamento_gambe_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
                 android:text="Sollevamento gambe"
-                android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
                 android:textAllCaps="false"
-                android:id="@+id/sollevamento_gambe_Button" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
             <Button
+                android:id="@+id/russian_twist_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
                 android:text="Russian Twist"
-                android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
                 android:textAllCaps="false"
-                android:id="@+id/russian_twist_Button" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
             <Button
+                android:id="@+id/superman_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Superman"
                 android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
+                android:text="Superman"
                 android:textAllCaps="false"
-                android:id="@+id/superman_Button" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
 
 
             <Space
@@ -82,29 +98,31 @@
 
             <!--_________DORSO__________-->
             <Button
+                android:id="@+id/dorso_Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Dorso"
-                android:textAllCaps="false"
-                android:id="@+id/dorso_Button" />
+                android:textAllCaps="false" />
+
             <Button
+                android:id="@+id/stacchi_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
                 android:text="Stacchi"
-                android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
                 android:textAllCaps="false"
-                android:id="@+id/stacchi_Button" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
             <Button
+                android:id="@+id/rematore_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rematore in piedi"
                 android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
+                android:text="Rematore in piedi"
                 android:textAllCaps="false"
-                android:id="@+id/rematore_Button" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
 
 
             <Space
@@ -113,29 +131,31 @@
 
             <!--_________BICIPITI__________-->
             <Button
+                android:id="@+id/bicipiti_Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Bicipiti"
-                android:textAllCaps="false"
-                android:id="@+id/bicipiti_Button" />
+                android:textAllCaps="false" />
+
             <Button
+                android:id="@+id/curl_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
                 android:text="Curl"
-                android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
                 android:textAllCaps="false"
-                android:id="@+id/curl_Button" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
             <Button
+                android:id="@+id/curl_braccio_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Curl su un solo braccio"
                 android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
+                android:text="Curl su un solo braccio"
                 android:textAllCaps="false"
-                android:id="@+id/curl_braccio_Button" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
 
 
             <Space
@@ -143,29 +163,31 @@
                 android:layout_height="10dp" />
             <!--_________POLPACCI__________-->
             <Button
+                android:id="@+id/polpacci_Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Polpacci"
-                android:textAllCaps="false"
-                android:id="@+id/polpacci_Button" />
+                android:textAllCaps="false" />
+
             <Button
+                android:id="@+id/salti_talloni_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
                 android:text="Salti su talloni"
-                android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
                 android:textAllCaps="false"
-                android:id="@+id/salti_talloni_Button" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
             <Button
+                android:id="@+id/sollevamento_alluce_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sollevamento su alluce"
                 android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
+                android:text="Sollevamento su alluce"
                 android:textAllCaps="false"
-                android:id="@+id/sollevamento_alluce_Button" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
 
             <Space
                 android:layout_width="match_parent"
@@ -173,29 +195,31 @@
 
             <!--_________PETTO__________-->
             <Button
+                android:id="@+id/petto_Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Petto"
-                android:textAllCaps="false"
-                android:id="@+id/petto_Button" />
+                android:textAllCaps="false" />
+
             <Button
+                android:id="@+id/pushups_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
                 android:text="Push-ups"
-                android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
                 android:textAllCaps="false"
-                android:id="@+id/pushups_Button" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
             <Button
+                android:id="@+id/piegamenti_braccio_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Piegamenti su un solo braccio"
                 android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
+                android:text="Piegamenti su un solo braccio"
                 android:textAllCaps="false"
-                android:id="@+id/piegamenti_braccio_Button" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
 
             <Space
                 android:layout_width="match_parent"
@@ -206,17 +230,18 @@
                 android:id="@+id/avambracci_Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="Avambracci" />
+                android:text="Avambracci"
+                android:textAllCaps="false" />
+
             <Button
+                android:id="@+id/rotazione_polsi_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rotazione polsi"
                 android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
+                android:text="Rotazione polsi"
                 android:textAllCaps="false"
-                android:id="@+id/rotazione_polsi_Button" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
 
             <Space
                 android:layout_width="match_parent"
@@ -224,38 +249,41 @@
 
             <!--_________GAMBE__________-->
             <Button
+                android:id="@+id/gambe_Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Gambe"
-                android:textAllCaps="false"
-                android:id="@+id/gambe_Button" />
+                android:textAllCaps="false" />
+
             <Button
+                android:id="@+id/squat_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
                 android:text="Squat"
-                android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
                 android:textAllCaps="false"
-                android:id="@+id/squat_Button" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
             <Button
+                android:id="@+id/affondi_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
                 android:text="Affondi"
-                android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
                 android:textAllCaps="false"
-                android:id="@+id/affondi_Button" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
             <Button
+                android:id="@+id/calci_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Calci all'indietro"
                 android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
+                android:text="Calci all'indietro"
                 android:textAllCaps="false"
-                android:id="@+id/calci_Button" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
 
             <Space
                 android:layout_width="match_parent"
@@ -263,29 +291,31 @@
 
             <!--_________SPALLE__________-->
             <Button
+                android:id="@+id/spalle_Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Spalle"
-                android:textAllCaps="false"
-                android:id="@+id/spalle_Button" />
+                android:textAllCaps="false" />
+
             <Button
+                android:id="@+id/alzateFrontali_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
                 android:text="Alzate centrali"
-                android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
                 android:textAllCaps="false"
-                android:id="@+id/alzateFrontali_Button" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
             <Button
+                android:id="@+id/alzateLaterali_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Alzate Laterali"
                 android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
+                android:text="Alzate Laterali"
                 android:textAllCaps="false"
-                android:id="@+id/alzateLaterali_Button" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
 
             <Space
                 android:layout_width="match_parent"
@@ -293,31 +323,31 @@
 
             <!--_________TRICIPITI__________-->
             <Button
+                android:id="@+id/tricipi_Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Tricipiti"
-                android:textAllCaps="false"
-                android:id="@+id/tricipi_Button" />
+                android:textAllCaps="false" />
+
             <Button
+                android:id="@+id/piegamenti_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
                 android:text="Piegamenti"
-                android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
                 android:textAllCaps="false"
-                android:id="@+id/piegamenti_Button" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
             <Button
+                android:id="@+id/piegamenti_fianco_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Piegamenti sul fianco"
                 android:backgroundTint="@color/black"
-                android:visibility="gone"
-                android:textColor="@color/white"
+                android:text="Piegamenti sul fianco"
                 android:textAllCaps="false"
-                android:id="@+id/piegamenti_fianco_Button" />
-
-
+                android:textColor="@color/white"
+                android:visibility="gone" />
 
         </LinearLayout>
     </ScrollView>
@@ -325,13 +355,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Home">
+        tools:context=".ListaEsercizi">
 
 
 
         <ImageButton
             android:id="@+id/HomeButton"
-            android:layout_width="100dp"
+            android:layout_width="110dp"
             android:layout_height="70dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
@@ -343,13 +373,14 @@
             android:layout_width="100dp"
             android:layout_height="70dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="110dp"
-            android:src="@drawable/lista"
-            android:backgroundTint="@color/white"/>
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/lista" />
 
         <ImageButton
             android:id="@+id/allenamentoButton"
-            android:layout_width="100dp"
+            android:layout_width="110dp"
             android:layout_height="70dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
@@ -361,11 +392,11 @@
             android:layout_width="100dp"
             android:layout_height="70dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginRight="110dp"
+            android:layout_marginRight="100dp"
             android:layout_alignParentRight="true"
             android:src="@drawable/impostazioni"
             android:backgroundTint="@color/white"/>
 
     </RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

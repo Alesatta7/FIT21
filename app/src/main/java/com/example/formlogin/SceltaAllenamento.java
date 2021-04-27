@@ -1,6 +1,7 @@
 package com.example.formlogin;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +11,7 @@ import android.widget.TextView;
 
 public class SceltaAllenamento extends AppCompatActivity {
 
-    TextView facile,medio,difficile;
+    CardView facile,medio,difficile;
 
     //Dichiarazione pulsanti barra di controllo
     ImageButton logout, profilo, impostazioni, esercizi, allenamento;
