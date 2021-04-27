@@ -44,7 +44,6 @@ public class ListaEsercizi extends AppCompatActivity {
         Intent info = getIntent();
 
         //Prova del pulsante BOH
-        boh = findViewById(R.id.boh);
         //-------------------Assegnamento tramite id per i muscoli
         addominali = findViewById(R.id.addominali_Button);
         dorso = findViewById(R.id.dorso_Button);

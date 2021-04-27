@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 
 public class Home extends AppCompatActivity {
 
-    ImageButton  profilo, impostazioni, esercizi, allenamento;
+    ImageButton  profilo, impostazioni, esercizi, allenamento, logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +19,19 @@ public class Home extends AppCompatActivity {
 
         Intent info = getIntent();
 
+        logout = findViewById(R.id.logoutButton);
         esercizi = findViewById(R.id.eserciziButton);
         profilo = findViewById(R.id.profiloButton);
         impostazioni = findViewById(R.id.impostazioniButton);
         allenamento = findViewById(R.id.allenamentoButton);
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this,StartLogin.class);
+                startActivity(intent);
+            }
+        });
 
         //Barra di controllo
         esercizi.setOnClickListener(new View.OnClickListener() {
