@@ -361,38 +361,40 @@
 
         <ImageButton
             android:id="@+id/HomeButton"
-            android:layout_width="110dp"
+            android:layout_width="100dp"
             android:layout_height="70dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:src="@drawable/home"
-            android:backgroundTint="@color/white"/>
+            android:backgroundTint="@color/white"
+            android:layout_marginLeft="18dp"/>
 
         <ImageButton
             android:id="@+id/eserciziButton"
             android:layout_width="100dp"
             android:layout_height="70dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="100dp"
+            android:layout_marginLeft="110dp"
             android:layout_marginBottom="0dp"
             android:backgroundTint="@color/white"
             android:src="@drawable/lista" />
 
         <ImageButton
             android:id="@+id/allenamentoButton"
-            android:layout_width="110dp"
+            android:layout_width="100dp"
             android:layout_height="70dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:src="@drawable/workout"
-            android:backgroundTint="@color/white"/>
+            android:backgroundTint="@color/white"
+            android:layout_marginRight="18dp"/>
 
         <ImageButton
             android:id="@+id/impostazioniButton"
             android:layout_width="100dp"
             android:layout_height="70dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginRight="100dp"
+            android:layout_marginRight="110dp"
             android:layout_alignParentRight="true"
             android:src="@drawable/impostazioni"
             android:backgroundTint="@color/white"/>

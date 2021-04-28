@@ -14,7 +14,7 @@ public class SceltaAllenamento extends AppCompatActivity {
     CardView facile,medio,difficile;
 
     //Dichiarazione pulsanti barra di controllo
-    ImageButton logout, profilo, impostazioni, esercizi, allenamento;
+    ImageButton logout, home, impostazioni, esercizi, allenamento;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class SceltaAllenamento extends AppCompatActivity {
         //Implementazione della barra di controllo
 
         esercizi = findViewById(R.id.eserciziButton);
-        profilo = findViewById(R.id.profiloButton);
+        home = findViewById(R.id.homeButton);
         impostazioni = findViewById(R.id.impostazioniButton);
         allenamento = findViewById(R.id.allenamentoButton);
 
