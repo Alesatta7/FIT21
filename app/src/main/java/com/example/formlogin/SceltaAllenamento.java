@@ -40,6 +40,14 @@ public class SceltaAllenamento extends AppCompatActivity {
             }
         });
 
+        medio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SceltaAllenamento.this,Medio.class);
+                startActivity(intent);
+            }
+        });
+
 
         esercizi.setOnClickListener(new View.OnClickListener() {
             @Override
