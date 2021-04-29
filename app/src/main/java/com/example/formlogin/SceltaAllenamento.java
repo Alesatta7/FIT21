@@ -32,6 +32,8 @@ public class SceltaAllenamento extends AppCompatActivity {
         impostazioni = findViewById(R.id.impostazioniButton);
         allenamento = findViewById(R.id.allenamentoButton);
 
+
+
         facile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,6 +46,14 @@ public class SceltaAllenamento extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SceltaAllenamento.this,Medio.class);
+                startActivity(intent);
+            }
+        });
+
+        difficile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SceltaAllenamento.this,Difficile.class);
                 startActivity(intent);
             }
         });
