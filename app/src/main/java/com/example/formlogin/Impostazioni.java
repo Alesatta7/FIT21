@@ -9,13 +9,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+import java.io.Serializable;
+
 public class Impostazioni extends AppCompatActivity {
 
     ImageButton logout, home, impostazioni, esercizi, allenamento, modificapassword;
     EditText nuova,vecchia;
     Button conferma;
     Persona persona;
-    public static final String PERSONA_PATH ="com.example.esercitazione2.Persona";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,16 @@ public class Impostazioni extends AppCompatActivity {
         nuova = findViewById(R.id.nuova_password);
         vecchia = findViewById(R.id.vecchia_password);
         conferma = findViewById(R.id.conferma_pass);
+
+        Intent intent = getIntent();
+        Serializable object = intent.getSerializableExtra(MainActivity.PERSONA_PATH);
+
+        if(object instanceof Persona){
+            this.persona = (Persona) object;
+        }
+        else {
+            this.persona = new Persona();
+        }
 
         Integer[] i = new Integer[]{0};
 
