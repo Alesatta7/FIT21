@@ -4,19 +4,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home"
+    tools:context=".Impostazioni"
     android:background="@drawable/cut_card_background">
 
     <TextView
-        android:id="@+id/idEs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:text="Home"
+        android:text="Impostazioni"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="140dp"
+        android:text="password"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/vecchia_password"
+        android:hint="  vecchia passsword"
+        android:textSize="10sp"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="295dp"
+        android:layout_marginLeft="140dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/nuova_password"
+        android:hint="  nuova passsword"
+        android:textSize="10sp"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="140dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/conferma_pass"
+        android:text="conferma"
+        android:textSize="10sp"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="140dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:background="@color/grey"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/modificaPassword"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="280dp"
+        android:src="@drawable/ic_penna"
+        android:backgroundTint="@color/white"/>
 
     <ImageButton
         android:id="@+id/logoutButton"

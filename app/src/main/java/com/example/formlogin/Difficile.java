@@ -60,7 +60,6 @@ public class Difficile extends AppCompatActivity {
         //-------------------Assegnamento tramite id per gli esercizi
         crunch = findViewById(R.id.crunch_Button);
         esempio = findViewById(R.id.androidGif);
-        sollevamentoGambe = findViewById(R.id.sollevamento_gambe_Button);
         russianTwist = findViewById(R.id.russian_twist_Button);
         superMan = findViewById(R.id.superman_Button);
 
@@ -79,7 +78,6 @@ public class Difficile extends AppCompatActivity {
         rotazionePolsi = findViewById(R.id.rotazione_polsi_Button);
 
         squat = findViewById(R.id.squat_Button);
-        affondi = findViewById(R.id.affondi_Button);
         calci = findViewById(R.id.calci_Button);
 
         alzateFrontali = findViewById(R.id.alzateFrontali_Button);
