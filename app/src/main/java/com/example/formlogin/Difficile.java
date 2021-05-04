@@ -17,13 +17,13 @@ public class Difficile extends AppCompatActivity {
     ImageButton logout, profilo, impostazioni, esercizi, allenamento, home;
 
     //Dichiarazione pulsanti degli esercizi
-    Button crunch, sollevamentoGambe, russianTwist, superMan;
+    Button crunch, russianTwist, superMan;
     Button stacchi, rematore;
     Button curl, curlBraccio;
     Button salti, sollevamentoAlluce;
     Button pushups, piegamentiBraccio;
     Button rotazionePolsi;
-    Button squat, affondi, calci;
+    Button squat, calci;
     Button alzateLaterali, alzateFrontali;
     Button piegamentiFianco, piegamenti;
 
@@ -40,6 +40,7 @@ public class Difficile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_difficile);
+
         Intent info = getIntent();
 
         //button bottom
@@ -303,15 +304,7 @@ public class Difficile extends AppCompatActivity {
                 startActivity(cambioP);
             }
         });
-        sollevamentoGambe.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                es = 1;
-                Intent cambioP = new Intent(Difficile.this, Tutorial.class);
-                cambioP.putExtra("esercizio", es);
-                startActivity(cambioP);
-            }
-        });
+
 
     }
 }
