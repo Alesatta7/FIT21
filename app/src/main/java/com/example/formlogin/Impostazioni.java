@@ -127,11 +127,15 @@ public class Impostazioni extends AppCompatActivity {
 
         public boolean checkInput(){
             int errors =0;
-            if(vecchia.getText().toString() != persona.getPassword()){
-                errors++;
-                vecchia.setError("le password non combaciano");
-            }
-            else vecchia.setError(null);
+            if(vecchia.getText().toString().length() ==0 ){
+                vecchia.setError("Inserire password");
+                errors=1;
+            } else vecchia.setError(null);
+
+            if(!vecchia.getText().toString().equals(persona.getPassword())){
+                vecchia.setError("Password sbagliata");
+                errors=1;
+            } else vecchia.setError(null);
 
             return errors==0;
         }
