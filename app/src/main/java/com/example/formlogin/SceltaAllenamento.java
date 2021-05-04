@@ -14,7 +14,7 @@ public class SceltaAllenamento extends AppCompatActivity {
     CardView facile,medio,difficile;
 
     //Dichiarazione pulsanti barra di controllo
-    ImageButton logout, home, impostazioni, esercizi, allenamento;
+    ImageButton home, impostazioni, esercizi, allenamento;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +54,24 @@ public class SceltaAllenamento extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SceltaAllenamento.this,Difficile.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SceltaAllenamento.this,Home.class);
+                startActivity(intent);
+            }
+        });
+
+        impostazioni.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SceltaAllenamento.this,Impostazioni.class);
                 startActivity(intent);
             }
         });

@@ -14,7 +14,7 @@ public class ListaEsercizi extends AppCompatActivity {
     Button addominali, dorso, bicipiti, polpacci, petto, avambracci, gambe, spalle, tricipiti;
 
     //Dichiarazione pulsanti barra di controllo
-    ImageButton logout, profilo, impostazioni, esercizi, allenamento, home;
+    ImageButton impostazioni, esercizi, allenamento, home;
 
     //Dichiarazione pulsanti degli esercizi
     Button crunch, sollevamentoGambe, russianTwist, superMan;
@@ -44,6 +44,9 @@ public class ListaEsercizi extends AppCompatActivity {
 
         //button bottom
         home= findViewById(R.id.HomeButton);
+        esercizi = findViewById(R.id.eserciziButton);
+        impostazioni = findViewById(R.id.impostazioniButton);
+        allenamento = findViewById(R.id.allenamentoButton);
 
 
         //-------------------Assegnamento tramite id per i muscoli
@@ -96,6 +99,30 @@ public class ListaEsercizi extends AppCompatActivity {
             public void onClick(View v) {
                 Intent ritornoHome = new Intent(ListaEsercizi.this, Home.class);
                 startActivity(ritornoHome);
+            }
+        });
+
+        esercizi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListaEsercizi.this,ListaEsercizi.class);
+                startActivity(intent);
+            }
+        });
+
+        allenamento.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListaEsercizi.this,SceltaAllenamento.class);
+                startActivity(intent);
+            }
+        });
+
+        impostazioni.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListaEsercizi.this,Impostazioni.class);
+                startActivity(intent);
             }
         });
 
@@ -277,26 +304,6 @@ public class ListaEsercizi extends AppCompatActivity {
             }
         });
 
-        //Implementazione della barra di controllo
-        esercizi = findViewById(R.id.eserciziButton);
-        profilo = findViewById(R.id.profiloButton);
-        impostazioni = findViewById(R.id.impostazioniButton);
-        allenamento = findViewById(R.id.allenamentoButton);
-
-        esercizi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ListaEsercizi.this,ListaEsercizi.class);
-                startActivity(intent);
-            }
-        });
-        allenamento.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ListaEsercizi.this,SceltaAllenamento.class);
-                startActivity(intent);
-            }
-        });
 
 
         //---------------------Esercizi con gif

@@ -27,6 +27,11 @@ public class Impostazioni extends AppCompatActivity {
         nuova = findViewById(R.id.nuova_password);
         vecchia = findViewById(R.id.vecchia_password);
         conferma = findViewById(R.id.conferma_pass);
+        logout = findViewById(R.id.logoutButton);
+        esercizi = findViewById(R.id.eserciziButton);
+        home = findViewById(R.id.homeButton);
+        impostazioni = findViewById(R.id.impostazioniButton);
+        allenamento = findViewById(R.id.allenamentoButton);
 
         Intent intent = getIntent();
         Serializable object = intent.getSerializableExtra(MainActivity.PERSONA_PATH);
@@ -39,6 +44,49 @@ public class Impostazioni extends AppCompatActivity {
         }
 
         Integer[] i = new Integer[]{0};
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Impostazioni.this,StartLogin.class);
+                startActivity(intent);
+            }
+        });
+
+        //Barra di controllo
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Impostazioni.this,Home.class);
+                startActivity(intent);
+            }
+        });
+
+
+        esercizi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Impostazioni.this,ListaEsercizi.class);
+                startActivity(intent);
+            }
+        });
+
+        allenamento.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Impostazioni.this,SceltaAllenamento.class);
+                startActivity(intent);
+            }
+        });
+
+        impostazioni.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Impostazioni.this,Impostazioni.class);
+                startActivity(intent);
+            }
+        });
 
         modificapassword.setOnClickListener(new View.OnClickListener() {
             @Override
