@@ -23,6 +23,7 @@ public class StartLogin extends AppCompatActivity {
     TextView linkReg;
 
     String email, password;
+    public static final String UTENTE_PATH ="com.example.formlogin.Persona";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,7 +79,8 @@ public class StartLogin extends AppCompatActivity {
                     err=1;
                 } else pass.setError(null);
                 if(err==0){
-                    Intent es = new Intent(StartLogin.this, ListaEsercizi.class);
+                    Intent es = new Intent(StartLogin.this, Home.class);
+                    es.putExtra(UTENTE_PATH, persona);
                     startActivity(es);
                 }
 

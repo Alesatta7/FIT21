@@ -84,10 +84,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent showResult = new Intent(MainActivity.this, ResultActivity.class);
                 Intent parametri = new Intent(MainActivity.this, StartLogin.class);
+                Intent forHome = new Intent(MainActivity.this, Home.class);
                 if(checkInput()){
                     UpdatePerson();
                     showResult.putExtra(PERSONA_PATH, persona);
                     parametri.putExtra(PERSONA_PATH, persona);
+                    forHome.putExtra(PERSONA_PATH, persona);
                     startActivity(parametri);
                     //startActivity(showResult);
                 }
