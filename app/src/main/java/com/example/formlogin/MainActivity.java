@@ -180,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
 
         //this.persona.setGenere(this.genere);
 
-       // this.persona.setAltezza(Integer.parseInt(String.valueOf(this.altezzaT)));
+        // this.persona.setAltezza(Integer.parseInt(String.valueOf(this.altezzaT)));
         //this.persona.setPeso(Integer.parseInt(String.valueOf(this.pesoT)));
         //this.persona.setCirconferenzaPolso(Integer.parseInt(String.valueOf(this.circonferenzaT)));
     }
@@ -253,12 +253,12 @@ public class MainActivity extends AppCompatActivity {
         switch(view.getId()) {
             case R.id.donnaRB:
                 if (checked)
-                   genere.setText("Donna");
-                    break;
+                    genere.setText("Donna");
+                break;
             case R.id.uomoRB:
                 if (checked)
-                  genere.setText("Uomo");
-                    break;
+                    genere.setText("Uomo");
+                break;
         }
     }
 }

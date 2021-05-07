@@ -13,14 +13,14 @@
         <activity android:name=".Impostazioni" />
         <activity android:name=".Medio" />
         <activity android:name=".Facile" />
-        <activity android:name=".FirtsActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".SceltaAllenamento" />
         <activity android:name=".Tutorial" />
         <activity android:name=".ListaEsercizi" />
         <activity android:name=".Home" />
         <activity android:name=".StartLogin" />
         <activity android:name=".ResultActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".FirtsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

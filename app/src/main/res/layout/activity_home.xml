@@ -182,7 +182,7 @@
                     android:textSize="20sp"
                     android:textStyle="bold"/>
                 <Space
-                    android:layout_width="20dp"
+                    android:layout_width="15dp"
                     android:layout_height="wrap_content"/>
 
                 <TextView
@@ -274,16 +274,42 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="22dp"
+                    android:layout_weight="1"
                     android:text="Il tuo indice di massa corporea indica:" />
 
                 <Space
                     android:layout_width="10dp"
                     android:layout_height="wrap_content"/>
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Peso Normale"
+                    android:id="@+id/risultatoImc"/>
+            </LinearLayout>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Peso Normale"
-                android:id="@+id/risultatoImc"/>
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_weight="1"
+                    android:text="Le dimendioni del polso:" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Costituzione media"
+                    android:id="@+id/risultatoCorporatura"/>
             </LinearLayout>
 
             <Space
