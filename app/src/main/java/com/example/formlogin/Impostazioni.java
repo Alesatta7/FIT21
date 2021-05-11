@@ -53,7 +53,7 @@ public class Impostazioni extends AppCompatActivity {
             }
         });
 
-        //Barra di controllo
+        //-----------------------------------------Barra di controllo
 
         home.setOnClickListener(new View.OnClickListener() {
             @Override
