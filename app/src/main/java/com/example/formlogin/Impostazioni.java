@@ -132,7 +132,7 @@ public class Impostazioni extends AppCompatActivity {
                 errors=1;
             } else vecchia.setError(null);
 
-            if(!vecchia.getText().toString().equals(persona.getPassword())){
+            if(!vecchia.getText().toString().equals(MainActivity.logged.getPassword())){
                 vecchia.setError("Password sbagliata");
                 errors=1;
             } else vecchia.setError(null);

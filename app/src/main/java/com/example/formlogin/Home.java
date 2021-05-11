@@ -89,13 +89,13 @@ public class Home extends AppCompatActivity {
 
 
         //----------------Modifica TextView
-        altezzaTv.setText(Integer.toString(persona.getAltezza()));
-        pesoAttualeTv.setText(Integer.toString(persona.getPeso()));
-        circonferenzaTv.setText(Integer.toString(persona.getCirconferenzaPolso()));
-        genereTv.setText(persona.getGenere());
+        altezzaTv.setText(Integer.toString(MainActivity.logged.getAltezza()));
+        pesoAttualeTv.setText(Integer.toString(MainActivity.logged.getPeso()));
+        circonferenzaTv.setText(Integer.toString(MainActivity.logged.getCirconferenzaPolso()));
+        genereTv.setText(MainActivity.logged.getGenere());
 
         SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-        etaTv.setText(format.format(persona.getDataDiNascita().getTime()));
+        etaTv.setText(format.format(MainActivity.logged.getDataDiNascita().getTime()));
         LocalDate newDate = LocalDate.parse(etaTv.getText().toString(), DateTimeFormatter.ofPattern("dd/MM/yyy"));
         Period period = Period.between(newDate, LocalDate.now());
         etaTv.setText(Integer.toString(period.getYears()));
@@ -103,8 +103,8 @@ public class Home extends AppCompatActivity {
 
 
         //-----------------Calcolo IMC e setto la descrizione del peso
-        pesoA = persona.getPeso();
-        altezzaCm = persona.getAltezza();
+        pesoA = MainActivity.logged.getPeso();
+        altezzaCm = MainActivity.logged.getAltezza();
         imcI =  pesoA/(altezzaCm*altezzaCm/10000.0f);
         imcS = String.format("%.2f", imcI);
 
@@ -139,7 +139,7 @@ public class Home extends AppCompatActivity {
 
         //---------------In base alla grandezza del polso e al genere dell'utente si calcola il peso ideale
         //Variabili d'appoggio per polso, peso min e peso max calcolati in base all'altezza
-        polso = persona.getCirconferenzaPolso();
+        polso = MainActivity.logged.getCirconferenzaPolso();
         minP = (18.5f)*(altezzaCm/100f)*(altezzaCm/100f);
         maxP =  (25.1f)*(altezzaCm/100f)*(altezzaCm/100f);
         minS = String.format("%.2f", minP);
@@ -151,7 +151,7 @@ public class Home extends AppCompatActivity {
 
         pesoId = 1.0f;
         //--------Corporatura DONNA
-        if(persona.getGenere().equals("Donna")){
+        if(MainActivity.logged.getGenere().equals("Donna")){
             metabolismoF = (float) (655.1+(9.563*pesoA)+(1.850*altezzaCm)-(4.676*etaF));
             if(polso < 14){         //Corporatura esile
                 pesoId = minP + 1.0f;
@@ -166,7 +166,7 @@ public class Home extends AppCompatActivity {
         }
 
         //--------Corporatura UOMO
-        if(persona.getGenere().equals("Uomo")){
+        if(MainActivity.logged.getGenere().equals("Uomo")){
             metabolismoF = (float) (66.5+(13.75*pesoA)+(5.003*altezzaCm)-(6.775f*etaF));
             if(polso < 16){         //Corporatura esile
                 pesoId = minP + 1.0f;

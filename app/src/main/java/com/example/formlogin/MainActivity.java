@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     TextView errorText;
     Persona persona;
 
+    static Persona logged;
 
     public static final String PERSONA_PATH ="com.example.esercitazione2.Persona";
     public static final int DONNA = 0;
@@ -168,6 +169,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void UpdatePerson(){
+        logged = persona;
         this.persona.setNome(this.nome.getText().toString());
         this.persona.setCognome(this.cognome.getText().toString());
         this.persona.setEmail(this.email.getText().toString());

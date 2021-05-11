@@ -64,7 +64,8 @@ public class StartLogin extends AppCompatActivity {
                     err=1;
                 } else mail.setError(null);
 
-                if(!mail.getText().toString().equals(persona.getEmail())){
+                //if(!mail.getText().toString().equals(persona.getEmail())){
+                if(!mail.getText().toString().equals(MainActivity.logged.getEmail())){
                     mail.setError("mail sbagliata");
                     err=1;
                 } else mail.setError(null);
@@ -74,7 +75,7 @@ public class StartLogin extends AppCompatActivity {
                     err=1;
                 } else pass.setError(null);
 
-                if(!pass.getText().toString().equals(persona.getPassword())){
+                if(!pass.getText().toString().equals(MainActivity.logged.getEmail())){
                     pass.setError("Password sbagliata");
                     err=1;
                 } else pass.setError(null);
