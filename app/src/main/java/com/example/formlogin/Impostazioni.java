@@ -125,6 +125,7 @@ public class Impostazioni extends AppCompatActivity {
             this.persona.setPassword(this.nuova.getText().toString());
         }
 
+        //Da correggere
         public boolean checkInput(){
             int errors =0;
             if(vecchia.getText().toString().length() ==0 ){
